@@ -8,6 +8,9 @@ cask "spotifast-with-touchbar-lyrics" do
   homepage "https://github.com/ammarff/spotifast-personal"
 
   depends_on arch: :arm64
+  depends_on :macos
+
   app "Spotifast.app"
+
   uninstall quit: "rocks.spotifast.Spotifast"
 end
